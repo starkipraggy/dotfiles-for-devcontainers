@@ -4,8 +4,9 @@ This repository contains dotfiles specifically used in [devcontainers](https://c
 
 Things you'll find in this dotfiles (for now):
 
-- Aliases
-- ZSH Syntax Highlighting
+- [Aliases](https://github.com/JorgenKrieger/dotfiles-for-devcontainers/blob/main/.aliases)
+- [ZSH Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [Spaceship Prompt](https://github.com/spaceship-prompt/spaceship-prompt)
 
 ## Getting started
 
@@ -13,7 +14,7 @@ Add the following to your VS Code's `settings.json`.
 
 ```json
 {
-  "remote.containers.dotfiles.repository": "https://github.com/JorgenKrieger/dotfiles_devcontainers.git",
+  "remote.containers.dotfiles.repository": "https://github.com/JorgenKrieger/dotfiles-for-devcontainers.git",
   "remote.containers.dotfiles.installCommand": "~/dotfiles/install.sh",
   "remote.containers.dotfiles.targetPath": "~/dotfiles",
 }
@@ -22,4 +23,4 @@ Add the following to your VS Code's `settings.json`.
 ## Not working as expected?
 
 Dotfiles are installed while creating the container. Any devcontainer project already build needs to be rebuild.
-To rebuild the container press <kbd>⌘ cmd/alt</kbd> + <kbd>⇧ shift</kbd> + <kbd>P</kbd>. Next, search for **Remote-containers: Rebuild and Reopen in Container**.
+To rebuild the container open the command palette (<kbd>⌘ cmd/alt</kbd> + <kbd>⇧ shift</kbd> + <kbd>P</kbd>) and search for **Remote-containers: Rebuild and Reopen in Container**.
