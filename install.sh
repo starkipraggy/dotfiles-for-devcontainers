@@ -1,0 +1,1 @@
+ln $HOME/dotfiles/.aliases $HOME/.aliases
