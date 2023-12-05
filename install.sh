@@ -4,6 +4,12 @@ cd fonts
 ./install.sh
 cd .. && rm -rf fonts
 
+# install required packages
+if command -v apt-get &> /dev/null; then
+  sudo apt-get update
+  sudo apt-get install -y bat zsh
+fi
+
 # oh-my-zsh & plugins
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
@@ -15,12 +21,6 @@ git clone https://github.com/spaceship-prompt/spaceship-prompt.git $HOME/.oh-my-
 
 # Install ZSH syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-
-# Update debian dependancies
-if command -v apt-get &> /dev/null; then
-  sudo apt-get update
-  sudo apt-get install -y bat zsh
-fi
 
 # Create symlinks
 ln -nfs $HOME/dotfiles/.zshrc $HOME/.zshrc
