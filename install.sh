@@ -19,7 +19,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-
 # Update debian dependancies
 if command -v apt-get &> /dev/null; then
   sudo apt-get update
-  sudo apt-get install -y bat
+  sudo apt-get install -y bat zsh
 fi
 
 # Create symlinks
