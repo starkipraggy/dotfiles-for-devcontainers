@@ -7,7 +7,7 @@ cd .. && rm -rf fonts
 # install required packages
 if command -v apt-get &> /dev/null; then
   sudo apt-get update
-  sudo apt-get install -y bat zsh
+  sudo apt-get install -y bat zsh fzf
 fi
 
 # oh-my-zsh & plugins
@@ -23,7 +23,7 @@ git clone https://github.com/spaceship-prompt/spaceship-prompt.git $HOME/.oh-my-
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Create symlinks
-ln -nfs $HOME/dotfiles/.zshrc $HOME/.zshrc
+# ln -nfs $HOME/dotfiles/.zshrc $HOME/.zshrc
 ln -nfs $HOME/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
 
 # Change default shell to zsh
