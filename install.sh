@@ -27,4 +27,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-
 ln -nfs $HOME/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
 
 # Change default shell to zsh
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) $(whoami)
