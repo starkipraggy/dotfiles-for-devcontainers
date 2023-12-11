@@ -11,7 +11,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting docker docker-compose zsh-navigation-tools zsh-interactive-cd node npm)
+plugins=(git ssh-agent zsh-syntax-highlighting docker docker-compose zsh-navigation-tools zsh-interactive-cd node npm)
 
 source $ZSH/oh-my-zsh.sh
 
