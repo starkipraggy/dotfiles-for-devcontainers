@@ -26,5 +26,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-
 # ln -nfs $HOME/dotfiles/.zshrc $HOME/.zshrc
 ln -nfs $HOME/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
 
+# Copy user gitconfig
+cp ./.gitconfig ~
+
+
 # Change default shell to zsh
 sudo chsh -s $(which zsh) $(whoami)
